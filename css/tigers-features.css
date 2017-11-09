@@ -19,7 +19,7 @@ body {
   .container {
 	  /*max-width: 720px;*/
 	min-width: 100%;
-  }
+  
 }
 
 @media (min-width: 992px) {
@@ -43,4 +43,11 @@ body {
 
 .card {
   height: 100%;
+}
+
+#navbarMenu1 {
+	color: rgba(0,0,0,.5)
+}
+#navbarMenu2 .nav-link {
+text-align: right;
 }
