@@ -6,19 +6,73 @@
 
 body {
   padding-top: 54px;
+  color: black;
 }
 
-@media (min-width: 576px) {
+.fixed-second {
+	position: fixed;
+	line-height: 0.5;
+	top: 60px;
+	min-width: 100%;
+	z-index: 1030;
+}
+
+a {
+	color: black;
+}
+a:hover {
+	color:goldenrod;
+}
+#logo {
+	font-size: 24pt;
+}
+@media (max-width: 320px) {
+  .container {
+	  /*max-width: 540px;*/
+	min-width: 100%;
+
+  }
+  .navbar {
+	  padding: 0;
+  }
+  #description {
+	  display: none;
+  }
+  #logo {
+	  padding: 0.5rem;
+  }
+  #address { 
+	  display: none;
+  }
+  #menulogin {
+	  display: block;
+  }
+}
+@media (max-width: 992px) {
+  #menulogin {
+	  display: block;
+  }
+  #login {
+	  display: none;
+  }
+  }
+@media (min-width: 160px) and (max-width: 768px) {
   .container {
 	  /*max-width: 540px;*/
 	min-width: 100%;
   }
+  #address {
+	  display: none;
+  }
 }
-
 @media (min-width: 768px) {
   .container {
 	  /*max-width: 720px;*/
 	min-width: 100%;
+	}
+  #address {
+	  display: block;
+  }
   
 }
 
@@ -30,6 +84,12 @@ body {
 	  /*max-width: 960px;*/
 	min-width: 100%;
   }
+  #address {
+	  display: block;
+  }
+  #menulogin {
+	  display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -37,17 +97,16 @@ body {
 	  /*max-width: 1140px;*/
 	  min-width: 100%;
   }
+  #address {
+	  display: block;
+  }
 }
-
 
 
 .card {
   height: 100%;
 }
 
-#navbarMenu1 {
-	color: rgba(0,0,0,.5)
-}
-#navbarMenu2 .nav-link {
-text-align: right;
+.navbar-text {
+	color: black;
 }
